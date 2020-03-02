@@ -1,0 +1,3 @@
+rootProject.name = 'flyway-spring-boot'
+include 'contract'
+
