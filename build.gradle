@@ -50,17 +50,23 @@ repositories {
 }
 
 dependencies {
-    implementation project(':contract')
 
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     // 健康检查依赖
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
 
-    implementation "org.flywaydb:flyway-core:5.2.4"
+    implementation 'org.flywaydb:flyway-core:5.2.4'
     implementation 'org.hibernate:hibernate-core:5.4.0.Final'
     implementation 'mysql:mysql-connector-java:8.0.12'
     implementation 'com.exmertec.yaz:yaz:0.22'
+
+    implementation 'io.projectreactor:reactor-core:3.2.5.RELEASE'
+
+    implementation 'com.google.guava:guava:27.0.1-jre'
+
+    implementation 'org.mapstruct:mapstruct-jdk8:1.2.0.Final'
+    implementation 'org.mapstruct:mapstruct-processor:1.2.0.Final'
 
     // lombok
     compileOnly "org.projectlombok:lombok:1.18.4"
