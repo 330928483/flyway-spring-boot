@@ -1,0 +1,17 @@
+pipeline {
+  options { disableConcurrentBuilds() }
+  agent any
+  stages {
+    stage("Assemble") {
+      steps {
+        sh "./gradlew clean"
+        sh "./gradlew assemble"
+      }
+    }
+    stage("Unit Test") {
+      steps {
+        sh "./gradlew clean check"
+      }
+    }
+  }
+}
