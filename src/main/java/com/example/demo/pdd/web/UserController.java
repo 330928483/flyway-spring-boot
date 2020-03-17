@@ -11,7 +11,7 @@ import reactor.core.publisher.Flux;
 @RestController
 @RequestMapping("user")
 @RequiredArgsConstructor
-public class UserContorller {
+public class UserController {
 
   private final UserService userService;
 
